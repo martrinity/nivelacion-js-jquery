@@ -19,8 +19,18 @@ $(document).ready( function(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+	recipesArray.forEach(function(el){
+		if(el.highlighted == true){
+			console.log(el);
+			renderRecipe(el);
+;		}
+
+	})
+
 	console.log('Recipes: ', recipesArray);
+
 }
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
