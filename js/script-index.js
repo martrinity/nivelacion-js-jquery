@@ -1,4 +1,6 @@
 $(document).ready( function(){
+	$("#back").hide("index.html");
+	$("#menu-hide").hide("recipe.html");
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
