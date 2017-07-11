@@ -77,14 +77,15 @@ function renderActivities(activities) {
 * archivo "templates/templates-activity.html"
 */
 function renderActivity(activities) {
-	$(".list-activities").append('<span class="attribution">'+
+	$(".list-activities").append('<a href="#" class="item-activity">'+
+		'<span class="attribution">'+
 		'<span class="avatar">'+
-		'<img src="' + activities.userAvatar + '" class="image-avatar">'+
+		'<img src="' + activities.userAvatar+ '" class="image-avatar">'+
 		'</span>'+
 		'<span class="meta">'+
-		'<span class="author">' + activities.userName + '</span>made'+
-		'<span class="recipe">' + activities.recipeName + '</span>:'+activities.text +
-		'<span class="location">&mdash;'+activities.place+'</span>'+
+		'<span class="author">' + activities.userName + '</span> made '+
+		'<span class="recipe">' + activities.recipeName + '</span> : ' +activities.text +
+		'<span class="location">&mdash; '+activities.place+'</span>'+
 		'</span>'+
   		'</span>'+
 		'<div class="bg-image" style="background-image: url('+"'" + activities.image + "'"+');">'+
